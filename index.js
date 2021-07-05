@@ -22,6 +22,7 @@ app.post("/api/v1/quiz", function (req, res) {
     }
   });
 
+const PORT = process.env.PORT || 3000;
 app.get("/api/v1/users", function (req, res) {
     console.log(req);
     res.send({
@@ -30,7 +31,7 @@ app.get("/api/v1/users", function (req, res) {
     });
   });
  
-app.listen(3000, function(){
+app.listen(PORT, function(){
     console.log("runnning");
 });
 
